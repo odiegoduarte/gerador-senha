@@ -1,0 +1,139 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Source sans Pro", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #1c1f2b;
+  user-select: none;
+  padding: 15px;
+  box-sizing: border-box;
+  color: rgba(255, 255, 255, 0.842);
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+.inputBox {
+  position: relative;
+  width: 600px;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #0d101b21;
+  border-radius: 1rem;
+  margin: 0;
+}
+
+.inputBox:before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  right: -2px;
+  bottom: -2px;
+  left: -2px;
+  background: rgba(255, 255, 255, 0);
+  z-index: -1;
+  border-radius: 1rem;
+}
+
+.inputBox:after {
+  content: "";
+  position: absolute;
+  top: -2px;
+  right: -2px;
+  bottom: -2px;
+  left: -2px;
+  background: #5b85e100;
+  z-index: -1;
+  filter: blur(0px);
+}
+
+.frame {
+  box-sizing: border-box;
+  border: dotted rgba(255, 255, 255, 0.877);
+  border-radius: 1rem;
+}
+.inputBox input {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  border: none;
+  margin: 15px 0 20px;
+  background: transparent;
+  outline: none;
+  font-size: 24px;
+  letter-spacing: 2px;
+  box-sizing: border-box;
+  border-radius: 8px;
+  color: rgb(116, 216, 216);
+  text-align: center;
+  box-shadow: -1px -1px 15px rgba(64, 76, 83, 0.801);
+}
+input::placeholder {
+  text-align: left;
+}
+
+#button {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  text-align: center;
+}
+
+.inputBox #btn1,
+#btn2 {
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.945);
+  font-size: 25px;
+  padding: 10px 15px;
+  border-radius: 8px;
+  border: solid #5b86e1;
+}
+.inputBox #btn1:active {
+  background: rgb(226, 238, 238);
+  box-shadow: 0 5px rgba(9, 13, 236, 0.959);
+  transform: translateY(4px);
+  color: #111;
+}
+.inputBox #btn2:active {
+  background: rgb(226, 238, 238);
+  box-shadow: 0 5px rgb(9, 13, 236);
+  transform: translateY(4px);
+  color: #111;
+}
+
+@media only screen and (max-width: 650px) {
+  .inputBox {
+    position: relative;
+    width: 400px; 
+    height: 600px;
+    margin: 0;
+  }
+  .frame {
+    border-radius: 1rem;
+    font-size: 19px;
+    margin-bottom: 40px;
+    width: 100%;
+    margin-left: 1px;
+  }
+
+  #button {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+    text-align: center;
+  }
+  .inputBox #btn1,
+  #btn2 {
+    font-size: 21px;
+  }
+  input::placeholder {
+    font-size: 19px;
+    font-weight: bold;
+  }
+}
