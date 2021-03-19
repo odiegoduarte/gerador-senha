@@ -4,7 +4,7 @@
   <img width="700" height="" src="readme-assets/geradordesenha.png">
 </p>
 
-<h3 align="center">Esse gerador de senha aleatória é meu primeiro programa feito com a framework electronjs.</h3>
+<h2 align="center">Esse gerador de senha aleatória é meu primeiro programa feito com a framework electronjs.</h2>
 
 <br><br>
 
@@ -23,6 +23,21 @@ Para fazer building da minha aplicação eu utilizei o electronforge foi o que e
 
 <br>
 
+#### Aquivos e pastas contidos no repositorio
+
+Nome pasta e aquivos | Descrição
+:------ | :------
+readme-assets | Imagens do arquivo README md
+npm-start.sh  | Simples shell que roda o comando start pra testar app.
+npm-run-make.sh | Simples shell que roda o comando run make do electronforge
+source-code-app | Codico fonte da aplicação
+Template-Logo-Editavel-GIMP.xcf | Arquivo editavel GIMP logo do app.
+
+<br>
+
+
+
+<br>
 
 ### Adicionando icone da aplicação no linux.
 Dentro do arquivo "package.json" adicionar a linha "icon": "./src/icon.png"
@@ -48,6 +63,7 @@ Exemplo:
 
 <br><br>
 
+
 ### Referências
 
 - [Node.JS](https://nodejs.org/en/docs/)
@@ -59,4 +75,10 @@ Exemplo:
 - [Forge Importar Projeto Existente](https://www.electronforge.io/import-existing-project)
 
 
-<br><br>
+<br>
+
+
+
+
+<br>
+
