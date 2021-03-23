@@ -35,14 +35,46 @@ Template-Logo-Editavel-GIMP.xcf | Arquivo editavel GIMP logo do app.
 
 <br>
 
+### Iniciando novo projeto com Electron Forge
 
+~~~
+npx create-electron-app nome-app
+~~~
 
-<br>
+### Estrutura do Electron Forge
+
+```text
+
+nome-app/
+├── node_modules
+├──src
+│  ├── index.css
+│  ├── index.html
+│  └── index.js
+├──.git
+├──package.json
+├──package-lock.json
+└──.gitignore
+
+```
+
+### Comando para rodar app
+
+```text
+npm start
+```
+
+### Comando para compirar app
+
+```text
+npm run make
+```
 
 ### Adicionando icone da aplicação no linux.
-Dentro do arquivo "package.json" adicionar a linha "icon": "./src/icon.png"
-
-<br>
+Dentro do arquivo "package.json" adicionar a linha 
+```text
+"icon": "./src/icon.png"
+```
 
 Exemplo:
 
@@ -60,9 +92,7 @@ Exemplo:
           }
 ~~~
 
-
 <br><br>
-
 
 ### Referências
 
@@ -75,10 +105,4 @@ Exemplo:
 - [Forge Importar Projeto Existente](https://www.electronforge.io/import-existing-project)
 
 
-<br>
-
-
-
-
-<br>
-
+<br><br>
